@@ -1,0 +1,43 @@
+html
+    head
+        //script src="https://kit.fontawesome.com/87841d0942.js"
+
+    body.tasks-index-body
+        .header
+            h2 Tastaは日付ごとにタスクを管理できるツール。
+            h2 さっそくタスクを作成してみましょう！
+            button.btn.btn-info type="button" onclick="location.href='/tasks/new'" タスク作成
+        .tasks-content
+            .days.has-tasks
+                .day
+                    h1.date-title 8月18日(日)
+                    .task
+                        .task-title
+                            h2 ・買い物
+                            .task-operation
+                                a.edit = link_to "編集", "/tasks/edit"
+                                a.delete = link_to "削除", "/tasks/delete"
+                        .task-body
+                            | サンダル、洋服、財布、傘、柔軟剤
+                    .task
+                        .task-title
+                            h2 ・夕飯の支度
+                            .task-operation
+                                a.edit = link_to "編集", "/tasks/edit"
+                                a.delete = link_to "削除", "/tasks/delete"
+                        .task-body
+                            | ご飯を炊くのを忘れないように。
+                .day
+                    h1.date-title 8月19日(日)
+                    .task
+                        .task-title
+                            h2 ・帰省
+                            .task-operation
+                                a.edit = link_to "編集", "/tasks/edit"
+                                a.delete = link_to "削除", "/tasks/delete"
+                        .task-body
+                            | チケット購入、親に連絡、お土産を買う
+            / .no-tasks
+            /     h2 No Tasks...
+            /     h2 タスクがありません。。。
+            /     i.fas.fa-folder-open
