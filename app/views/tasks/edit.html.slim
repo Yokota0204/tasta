@@ -1,1 +1,31 @@
-h1 This is Edit page.
+body.new-task-body
+    form
+        .head-form.form-group
+            h1 タスク編集
+        .title-form.form-group
+            label for="task-title" タイトル
+            input.form-control type="text" id="task-title" value="買い物"
+        .text-form.form-group
+            label for="text" 本文
+            textarea.form-control cols="30" rows="10" id="text" サンダル、洋服、財布、傘、柔軟剤
+        .deadline.form-group
+            label for="date"
+            input.date.form-control type="date" id="date" value="2019-08-20"
+        .form-btn
+            button.update.btn.btn-info type="submit" 完了
+        .the-other-btn
+            button.btn.btn-primary type="button" onclick="location.href='/tasks/new'" 新規作成
+            button.btn.btn-primary type="button" onclick="location.href='/tasks'" タスク一覧
+    .tasks-content
+            .days.has-tasks
+                .day
+                    h1.date-title 8月18日(日)
+                    .task
+                        .task-title
+                            h2 ・買い物
+                            .task-operation
+                                a.edit = link_to "編集", "/tasks/edit"
+                                a.delete = link_to "削除", "/tasks/delete"
+                        .task-body
+                            | サンダル、洋服、財布、傘、柔軟剤
+

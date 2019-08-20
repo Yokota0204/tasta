@@ -76,29 +76,65 @@
 
 // 新規作成画面
 .new-task-body {
-    form {
-        padding: 10vw 23vw;
-        font-size: 1.5vw;
-        .head-form {
-            text-align: center;
-            margin-bottom: 5vw;
+    // form {
+    //     padding: 10vw 23vw;
+    //     font-size: 1.5vw;
+    //     .head-form {
+    //         text-align: center;
+    //         margin-bottom: 5vw;
+    //     }
+    //     label {
+    //         line-height: 1.5;
+    //     }
+    //     .deadline {
+    //         .date {
+    //             width: 20%;
+    //         }
+    //         margin-bottom: 7vw;
+    //     }
+    //     .create-btn {
+    //         width: 100%;
+    //         text-align: center;
+    //         button {
+    //             padding: 1vw 2.5vw;
+    //             font-size: 1.5vw;
+    //         }
+    //     }
+    // }
+}
+
+//タスク作成・編集フォーム
+form {
+    padding: 10vw 23vw;
+    font-size: 1.5vw;
+    .head-form {
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+    label {
+        line-height: 1.5;
+    }
+    .deadline {
+        .date {
+            width: 20%;
         }
-        label {
-            line-height: 1.5;
+        margin-bottom: 6vw;
+    }
+    .form-btn {
+        width: 100%;
+        text-align: center;
+        button {
+            padding: 1vw 2.5vw;
+            font-size: 1.5vw;
         }
-        .deadline {
-            .date {
-                width: 20%;
-            }
-            margin-bottom: 7vw;
-        }
-        .create-btn {
-            width: 100%;
-            text-align: center;
-            button {
-                padding: 1vw 2.5vw;
-                font-size: 1.5vw;
-            }
+        margin-bottom: 6vw;
+    }
+    .the-other-btn {
+        text-align: center;
+        button {
+            padding: 1vw 2.5vw;
+            font-size: 1.5vw;
+            margin: 0vw 4vw;
         }
     }
 }
