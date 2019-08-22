@@ -162,14 +162,16 @@ form {
   .days {
     color: chocolate;
     .day {
-      margin-bottom: 1.5vw;
+      margin-bottom: 5.0vw;
       .date-title {
         border-bottom: solid 0.25vw;
         line-height: 1.5;
         margin-bottom: 3vw;
       }
       .task {
-        margin-bottom: 2.5vw;
+        border: thick double;
+        padding: 3vw 4vw;
+        margin-bottom: 3.0vw;
         .task-title {
           margin-bottom: 1.5vw;
           h2 {
